@@ -1,0 +1,53 @@
+#assigment 1
+'''Implement a problem of number of zeroes.
+Statement: Given an array of 1s and 0s which has all 1st first followed by all 0s? Find the number of 0s. Count the number of zeroes in the given array.
+Input: arr[] = {1, 1, 1, 1, 0, 0} Output: 2
+Input: arr[] = {1, 0, 0, 0, 0} Output: 4'''
+
+# code 1 by using the count() method
+
+lst=[1,1,1,1,0,0]
+x=lst.count(0)
+print(x)
+#output:-2
+#time complexity is o[n]
+
+# We are taking the input fro the user user input
+'''
+def count_zero(lst):
+    count=0
+    for i in lst:
+        if(i==0):
+            count+=1
+        else:
+            continue
+    return count
+lst=[]
+ch=0
+while(True):
+    x = int(input("ENter the choice:- "))
+    if(x==0):
+        break 
+    else:
+        inpu_ = int(input("Enter the element in the list:- "))
+        lst.append(inpu_) 
+
+zero = count_zero(lst)
+print(zero)
+#output
+'''
+ENter the choice:- 1
+Enter the element in the list:- 1
+ENter the choice:- 1
+Enter the element in the list:- 1
+ENter the choice:- 1
+Enter the element in the list:- 1
+ENter the choice:- 1
+Enter the element in the list:- 0
+ENter the choice:- 1
+Enter the element in the list:- 0
+ENter the choice:- 0
+2
+'''
+'''
+#time complexity:- o[n] because of the count_zero function
