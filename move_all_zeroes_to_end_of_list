@@ -1,0 +1,21 @@
+'''Implement a problem of move all zeroes to end of list.
+Statement: Given an array of random numbers, Push all the zero’s of a given array to the end of the list. For example, if the given alist is {1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0}, it should be changed to
+{1, 9, 8, 4, 2, 7, 6, 0, 0, 0, 0}. The order of all other elements should be same.
+Input : arr[] = {1, 2, 0, 4, 3, 0, 5, 0};
+Output : arr[] = {1, 2, 4, 3, 5, 0, 0, 0};'''
+'''general description:- In the code we divide the list into two sublist and then after separating the 0 and non-zero number we again the concatenate that list and display that list'''
+lst=[1,2,0,4,3,0,5,0]
+def move_zero(lst):
+    lst2=[]
+    lst_copy=[]
+    for i in range(len(lst)):
+        if(lst[i]==0):
+            lst_copy.append(lst[i])
+        else:
+            lst2.append(lst[i])
+    return lst2+ lst_copy
+x=move_zero(lst)
+print(x)
+
+#o.p:-[1, 2, 4, 3, 5, 0, 0, 0]
+# time complexity:-O(n)
